@@ -13,15 +13,18 @@ public class Main {
       
     
      public static void main(String[] args) {
-          Automovil auto1=new Automovil("renault",1990,"mh210");
-                System.out.println("auto1 es del año " + auto1.getAño()+" la marca "+auto1.getMarca()+" modelo "+ auto1.getModelo());
-          Motor mot=new Motor("mj569",2);
-          mot.imprimirmotor();
-          Puerta pue= new Puerta("hgd74");
-          pue.imprimirpuerta();
-          Llanta llan=new Llanta("michelin","jh_09",15);
-          llan.imprimirllantas();
-    
-               }      
-
+         Motor[] elmotor =new Motor[1];
+         elmotor [0]= new Motor("tel_78945",2);
+         Puerta  [] puertas=new Puerta[2];
+         puertas [0]=new Puerta("corrediza");
+         puertas [1]=new Puerta("corrediza");
+         Llanta  [] llantas=new Llanta[4];
+         llantas [0]=new Llanta ("michelin","mlh-98003",13);
+         llantas [1]=new Llanta ("michelin","mlh-98003",13);
+         llantas [2]=new Llanta ("michelin","mlh-98003",13);
+         llantas [3]=new Llanta ("michelin","mlh-98003",13);
+         
+         
+         Automovil auto1=new Automovil("renault",2001,"captur",elmotor,llantas,puertas);
+     }
 }

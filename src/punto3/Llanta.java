@@ -46,8 +46,5 @@ public class Llanta {
         this.tamanopulgadas = tamanopulgadas;
     }
 
- public void imprimirllantas(){
-    System.out.println("la marca de la llanta es "+ this.getMarca() + " modelo  "+ this.getModelo() + " de tamano "+ this.getTamanopulgadas()+" pulgadas");
-    }
-
+ 
 }

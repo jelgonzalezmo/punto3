@@ -17,16 +17,13 @@ public class Automovil {
     private Llanta[] llantas;
     private Puerta [] puertas;
 
-    
-    public Automovil() {}
-
-    public Automovil(String marca, int año, String modelo) {
+    public Automovil(String marca, int año, String modelo, Motor[] elmotor, Llanta[] llantas, Puerta[] puertas) {
         this.marca = marca;
         this.año = año;
         this.modelo = modelo;
         this.elmotor = new Motor[1];
         this.llantas = new Llanta[4];
-        this.puertas = new  Puerta[4];
+        this.puertas = new Puerta[2];
     }
 
     public String getMarca() {
@@ -41,6 +38,18 @@ public class Automovil {
         return modelo;
     }
 
+    public Motor[] getElmotor() {
+        return elmotor;
+    }
+
+    public Llanta[] getLlantas() {
+        return llantas;
+    }
+
+    public Puerta[] getPuertas() {
+        return puertas;
+    }
+
     public void setMarca(String marca) {
         this.marca = marca;
     }
@@ -53,23 +62,19 @@ public class Automovil {
         this.modelo = modelo;
     }
 
-    public Llanta lasllantas(Llanta l){
-    return this.llantas[3]=l;
-        }
-    
-    public Puerta laspuertas (Puerta p){
-    return this.puertas[3]=p;
-        }
-    public Motor Motorr (Motor m){
-    return this.elmotor[0]= m;
+    public void setElmotor(Motor[] elmotor) {
+        this.elmotor = elmotor;
+    }
+
+    public void setLlantas(Llanta[] llantas) {
+        this.llantas = llantas;
+    }
+
+    public void setPuertas(Puerta[] puertas) {
+        this.puertas = puertas;
+    }
+
        }
-    
-
-
-
-
-
-}
 
  
   

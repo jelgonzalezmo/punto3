@@ -34,9 +34,5 @@ public class Motor {
     public void setCilindros(int cilindros) {
         this.cilindros = cilindros;
     }
-  
-    public void imprimirmotor(){
-    System.out.println("motor con numero de serie "+ this.getNumerodeserie() + " tiene "+ this.getCilindros() +" cilindros");
-    }
-  
+ 
 }

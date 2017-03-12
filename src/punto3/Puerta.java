@@ -23,9 +23,5 @@ public class Puerta {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
-    }
-    
-     public void imprimirpuerta(){
-    System.out.println("tipo de puerta "+ this.getTipo());
-    }
-    }
+    }}
+   
